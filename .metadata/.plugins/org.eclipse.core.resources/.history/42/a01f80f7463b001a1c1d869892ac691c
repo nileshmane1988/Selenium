@@ -1,0 +1,25 @@
+package UsingShotcuts;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class VerifyUNandPWDalligement {
+	public static void main(String[] args) {
+		WebDriverManager.firefoxdriver().setup();
+		WebDriver driver = new FirefoxDriver();
+		System.out.println("2");
+		driver.get("https://opensource-demo.orangehrmlive.com/");
+		
+		WebElement email = driver.findElement(By.name("username"));
+		WebElement pwd = driver.findElement(By.name("username"));
+		
+		
+		
+		
+		
+	}
+
+}

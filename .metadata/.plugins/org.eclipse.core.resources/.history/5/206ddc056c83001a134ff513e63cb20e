@@ -1,0 +1,21 @@
+package com.testngexample;
+
+import org.testng.Reporter;
+import org.testng.annotations.Test;
+
+public class Sample4 {
+	@Test(priority = 1)
+	public void c() {
+		Reporter.log(" c Account creation method executed", true);
+	}
+
+	@Test(priority = 2)
+	public void a() {
+		Reporter.log(" a acc edit method executed", true);
+	}
+
+	@Test(priority = 3)
+	public void b() {
+		Reporter.log(" b acc deletion method executed", true);
+	}
+}

@@ -1,0 +1,32 @@
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class VerifyFB {
+
+	public static void main(String[] args) {
+		WebDriverManager.chromedriver().setup();
+		WebDriver driver = new ChromeDriver();
+		System.out.println("ProgStart");
+		driver.get("https://www.facebook.com");
+		String imgtag = "img";
+		WebElement fbimg = driver.findElement(By.tagName("i"));
+		String tfb = fbimg.getTagName();
+		boolean imgres = tfb.equals(imgtag);
+		if (imgres) {
+			System.out.println("fb logo is not img tag");
+		} else {
+			System.out.println("fb logo is img tag");
+		}
+	
+	//Fname defoult value
+		WebElement fname = driver.findElement(By.id("u_0_m"));
+		String defFname = fname.getAttribute("aria-label");
+	System.out.println(defFname);
+	
+	}
+
+}

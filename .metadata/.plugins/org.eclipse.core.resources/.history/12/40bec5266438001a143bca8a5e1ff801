@@ -1,0 +1,26 @@
+package UsingShotcuts;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class TabAndContPast {
+	public static void main(String[] args) throws InterruptedException {
+
+		WebDriverManager.firefoxdriver().setup();
+		Thread.sleep(3000);
+
+		WebDriver driver = new FirefoxDriver();
+		Thread.sleep(3000);
+
+		driver.get("https://demo.actitime.com/login.do");
+		Thread.sleep(3000);
+
+		WebElement un = driver.findElement(By.id("username"));
+
+	}
+
+}

@@ -1,0 +1,18 @@
+package UsingShotcuts;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class BackspacetTillTxtBoxEmpty 
+{
+public static void main(String[] args) {
+	WebDriverManager.edgedriver().setup();
+	System.out.println("hello");
+	WebDriver driver = new EdgeDriver();
+	System.out.println("hi");
+	driver.get("https://demo.actitime.com/login.do");
+	
+}
+}

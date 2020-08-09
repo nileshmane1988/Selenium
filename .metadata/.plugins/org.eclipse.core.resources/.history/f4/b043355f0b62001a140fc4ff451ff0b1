@@ -1,0 +1,12 @@
+import java.io.FileInputStream;
+
+public class FetchDataFrmExcel {
+
+	public static void main(String[] args) {
+
+	//Open Excel
+		String excelpath="../ExcelHandling/Excel/Sample.xlsx";
+		FileInputStream file= new FileInputStream(excelpath);
+	}
+
+}

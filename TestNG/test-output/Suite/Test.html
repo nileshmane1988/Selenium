@@ -1,0 +1,426 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>26/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Apr 23 07:17:27 IST 2020</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (402 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.testngexample.Sample6.test1()'><b>test1</b><br>Test class: com.testngexample.Sample6</td>
+<td><div><pre>org.testng.internal.thread.ThreadTimeoutException: Method com.testngexample.Sample6.test1() didn&apos;t finish within the time-out 5
+	at java.lang.Thread.interrupt0(Native Method)
+	at java.lang.Thread.interrupt(Unknown Source)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 2 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace603856241", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace603856241'><pre>org.testng.internal.thread.ThreadTimeoutException: Method com.testngexample.Sample6.test1() didn&apos;t finish within the time-out 5
+	at java.lang.Thread.interrupt0(Native Method)
+	at java.lang.Thread.interrupt(Unknown Source)
+	at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:60)
+	at org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:38)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>0</td>
+<td>com.testngexample.Sample6@3c0f93f1</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.testngexample.Sample4.a()'><b>a</b><br>Test class: com.testngexample.Sample4<br/>
+<a href="#Output-1773206895" onClick='toggleBox("Output-1773206895", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1773206895" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1773206895">
+ a acc edit method executed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.testngexample.Sample4@60c6f5b</td></tr>
+<tr>
+<td title='com.testngexample.Sample4.aab()'><b>aab</b><br>Test class: com.testngexample.Sample4<br/>
+<a href="#Output-1177377518" onClick='toggleBox("Output-1177377518", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1177377518" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1177377518">
+ b acc deletion method executed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.testngexample.Sample4@60c6f5b</td></tr>
+<tr>
+<td title='com.testngexample.Sample3.accountCreate()'><b>accountCreate</b><br>Test class: com.testngexample.Sample3<br/>
+<a href="#Output-2619171" onClick='toggleBox("Output-2619171", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2619171" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2619171">
+Account creation method executed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.testngexample.Sample3@7e0b0338</td></tr>
+<tr>
+<td title='com.testngexample.Sample3.accountDelete()'><b>accountDelete</b><br>Test class: com.testngexample.Sample3<br/>
+<a href="#Output-171497379" onClick='toggleBox("Output-171497379", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-171497379" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-171497379">
+acc deletion method executed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.testngexample.Sample3@7e0b0338</td></tr>
+<tr>
+<td title='com.testngexample.Sample3.accountEdit()'><b>accountEdit</b><br>Test class: com.testngexample.Sample3<br/>
+<a href="#Output-2012846597" onClick='toggleBox("Output-2012846597", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2012846597" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2012846597">
+acc edit method executed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.testngexample.Sample3@7e0b0338</td></tr>
+<tr>
+<td title='com.testngexample.Sample4.c()'><b>c</b><br>Test class: com.testngexample.Sample4<br/>
+<a href="#Output-1780132728" onClick='toggleBox("Output-1780132728", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1780132728" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1780132728">
+ c Account creation method executed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.testngexample.Sample4@60c6f5b</td></tr>
+<tr>
+<td title='com.testngexample.s4.createAccount()'><b>createAccount</b><br>Test class: com.testngexample.s4<br/>
+<a href="#Output-2015781843" onClick='toggleBox("Output-2015781843", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2015781843" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2015781843">
+Create Account Method Executed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.testngexample.s4@544fe44c</td></tr>
+<tr>
+<td title='com.testngexample.s4.deleteAccount()'><b>deleteAccount</b><br>Test class: com.testngexample.s4<br/>
+<a href="#Output-1682463303" onClick='toggleBox("Output-1682463303", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1682463303" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1682463303">
+Delete Account Method Executed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.testngexample.s4@544fe44c</td></tr>
+<tr>
+<td title='com.testngexample.s4.editAccount()'><b>editAccount</b><br>Test class: com.testngexample.s4<br/>
+<a href="#Output-428910174" onClick='toggleBox("Output-428910174", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-428910174" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-428910174">
+Edit Account Method Executed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.testngexample.s4@544fe44c</td></tr>
+<tr>
+<td title='com.testngexample.Sample5.sendSMS()'><b>sendSMS</b><br>Test class: com.testngexample.Sample5<br/>
+<a href="#Output-142555199" onClick='toggleBox("Output-142555199", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-142555199" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-142555199">
+SMS send method is executed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.testngexample.Sample5@1e127982</td></tr>
+<tr>
+<td title='com.testngexample.Sample5.sendSMS()'><b>sendSMS</b><br>Test class: com.testngexample.Sample5<br/>
+<a href="#Output-1320677379" onClick='toggleBox("Output-1320677379", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1320677379" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1320677379">
+SMS send method is executed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.testngexample.Sample5@1e127982</td></tr>
+<tr>
+<td title='com.testngexample.Sample5.sendSMS()'><b>sendSMS</b><br>Test class: com.testngexample.Sample5<br/>
+<a href="#Output-246399377" onClick='toggleBox("Output-246399377", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-246399377" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-246399377">
+SMS send method is executed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.testngexample.Sample5@1e127982</td></tr>
+<tr>
+<td title='com.testngexample.Sample5.sendSMS()'><b>sendSMS</b><br>Test class: com.testngexample.Sample5<br/>
+<a href="#Output-1630521067" onClick='toggleBox("Output-1630521067", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1630521067" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1630521067">
+SMS send method is executed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.testngexample.Sample5@1e127982</td></tr>
+<tr>
+<td title='com.testngexample.Sample5.sendSMS()'><b>sendSMS</b><br>Test class: com.testngexample.Sample5<br/>
+<a href="#Output-274773041" onClick='toggleBox("Output-274773041", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-274773041" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-274773041">
+SMS send method is executed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.testngexample.Sample5@1e127982</td></tr>
+<tr>
+<td title='com.testngexample.Sample5.sendSMS()'><b>sendSMS</b><br>Test class: com.testngexample.Sample5<br/>
+<a href="#Output-1629911510" onClick='toggleBox("Output-1629911510", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1629911510" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1629911510">
+SMS send method is executed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.testngexample.Sample5@1e127982</td></tr>
+<tr>
+<td title='com.testngexample.Sample5.sendSMS()'><b>sendSMS</b><br>Test class: com.testngexample.Sample5<br/>
+<a href="#Output-292917034" onClick='toggleBox("Output-292917034", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-292917034" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-292917034">
+SMS send method is executed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.testngexample.Sample5@1e127982</td></tr>
+<tr>
+<td title='com.testngexample.Sample5.sendSMS()'><b>sendSMS</b><br>Test class: com.testngexample.Sample5<br/>
+<a href="#Output-242355057" onClick='toggleBox("Output-242355057", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-242355057" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-242355057">
+SMS send method is executed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.testngexample.Sample5@1e127982</td></tr>
+<tr>
+<td title='com.testngexample.Sample5.sendSMS()'><b>sendSMS</b><br>Test class: com.testngexample.Sample5<br/>
+<a href="#Output-455538610" onClick='toggleBox("Output-455538610", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-455538610" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-455538610">
+SMS send method is executed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.testngexample.Sample5@1e127982</td></tr>
+<tr>
+<td title='com.testngexample.Sample5.sendSMS()'><b>sendSMS</b><br>Test class: com.testngexample.Sample5<br/>
+<a href="#Output-1226622409" onClick='toggleBox("Output-1226622409", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1226622409" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1226622409">
+SMS send method is executed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.testngexample.Sample5@1e127982</td></tr>
+<tr>
+<td title='com.testngexample.Sample2.test1()'><b>test1</b><br>Test class: com.testngexample.Sample2<br/>
+<a href="#Output-1990451863" onClick='toggleBox("Output-1990451863", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1990451863" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1990451863">
+Test 1 Executed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.testngexample.Sample2@617faa95</td></tr>
+<tr>
+<td title='com.testngexample.Sample7.test1()'><b>test1</b><br>Test class: com.testngexample.Sample7<br/>
+<a href="#Output-1250391581" onClick='toggleBox("Output-1250391581", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1250391581" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1250391581">
+execute test 1 <br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.testngexample.Sample7@2038ae61</td></tr>
+<tr>
+<td title='com.testngexample.Sample8.test1()'><b>test1</b><br>Test class: com.testngexample.Sample8<br>Parameters: nileshmane1988@gmail.com<br/>
+<a href="#Output-2114874018" onClick='toggleBox("Output-2114874018", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2114874018" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2114874018">
+nileshmane1988@gmail.com<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.testngexample.Sample8@31dc339b</td></tr>
+<tr>
+<td title='com.testngexample.Sample.test1()'><b>test1</b><br>Test class: com.testngexample.Sample<br/>
+<a href="#Output-1858609436" onClick='toggleBox("Output-1858609436", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1858609436" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1858609436">
+Welcome<br/>
+
+
+	To India<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.testngexample.Sample@31610302</td></tr>
+<tr>
+<td title='com.testngexample.Sample2.test2()'><b>test2</b><br>Test class: com.testngexample.Sample2<br/>
+<a href="#Output-1295083508" onClick='toggleBox("Output-1295083508", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1295083508" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1295083508">
+Test 2 Executed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.testngexample.Sample2@617faa95</td></tr>
+<tr>
+<td title='com.testngexample.Sample2.test3()'><b>test3</b><br>Test class: com.testngexample.Sample2<br/>
+<a href="#Output-249155636" onClick='toggleBox("Output-249155636", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-249155636" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-249155636">
+Test 3 Executed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.testngexample.Sample2@617faa95</td></tr>
+<tr>
+<td title='com.testngexample.Sample7.test3()'><b>test3</b><br>Test class: com.testngexample.Sample7<br/>
+<a href="#Output-1725017993" onClick='toggleBox("Output-1725017993", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1725017993" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1725017993">
+execute test 3 <br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.testngexample.Sample7@2038ae61</td></tr>
+</table><p>
+</body>
+</html>

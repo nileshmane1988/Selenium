@@ -1,0 +1,43 @@
+package UsingShotcuts;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Point;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class VerifyUNandPWDalligement {
+	public static void main(String[] args) {
+		WebDriverManager.firefoxdriver().setup();
+		WebDriver driver = new FirefoxDriver();
+		System.out.println("2");
+		driver.get("https://opensource-demo.orangehrmlive.com/");
+		
+		WebElement email = driver.findElement(By.id("txtUsername"));
+		WebElement pwd = driver.findElement(By.id("txtPassword"));
+		
+	Point epoint = email.getLocation();
+	int ex= epoint.getX();
+	int ey= epoint.getY(); 	
+	int ehight=email.getSize().getHeight();
+	int space =5;		
+	Point ppoint = pwd.getLocation();
+	int px= ppoint.getX();
+	int py= ppoint.getY(); 	
+	
+	int total = ey+ehight+space;
+	
+	if(total<py && px== ex)
+	{System.out.println("pwd field bellow the UN");
+	}
+	else {
+		System.out.println("pwd field NOT bellow the UN");
+		
+	}
+		
+	}
+
+}
