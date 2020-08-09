@@ -1,2 +1,6 @@
 # selenium
- This is selenium snippet
+ This is selenium snippet.
+ 
+ ## CoreJava
+ - first point
+- second point 
