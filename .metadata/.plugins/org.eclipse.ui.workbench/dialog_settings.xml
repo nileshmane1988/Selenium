@@ -10,15 +10,15 @@
 		<item key="org.eclipse.ui.internal.quickaccess.QuickAccessDialogDIALOG_USE_PERSISTED_SIZE" value="true"/>
 		<item key="org.eclipse.ui.internal.quickaccess.QuickAccessDialogDIALOG_USE_PERSISTED_LOCATION" value="false"/>
 		<list key="orderedElements">
+			<item value="search.in.help"/>
 			<item value="org.eclipse.ui.console.ConsoleView"/>
 			<item value="org.eclipse.egit.ui.StagingView"/>
-			<item value="org.eclipse.egit.ui.commit.OpenCommitAction"/>
 			<item value="org.eclipse.egit.ui.RepositoriesViewAddRepository"/>
 		</list>
 		<list key="orderedProviders">
+			<item value="search.help"/>
 			<item value="org.eclipse.e4.ui.parts"/>
 			<item value="org.eclipse.e4.ui.parts"/>
-			<item value="org.eclipse.ui.actions"/>
 			<item value="org.eclipse.ui.commands"/>
 		</list>
 		<list key="textEntries">
@@ -28,9 +28,9 @@
 			<item value="1"/>
 		</list>
 		<list key="textArray">
+			<item value="nileshmane1988@"/>
 			<item value="console"/>
 			<item value="git s"/>
-			<item value="git"/>
 			<item value="git "/>
 		</list>
 	</section>

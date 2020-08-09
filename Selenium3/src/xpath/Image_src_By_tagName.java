@@ -26,6 +26,9 @@ public class Image_src_By_tagName {
 			WebElement rv = ref.get(i);
 			String str = rv.getAttribute("src");
 			
+			
+			
+			
 			System.out.println(str);
 			
 			
