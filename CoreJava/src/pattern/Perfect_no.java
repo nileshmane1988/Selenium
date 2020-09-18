@@ -10,8 +10,7 @@ public class Perfect_no {
 		Scanner sc = new Scanner(System.in);
 		System.out.print("enter no  here = ");
 		int n=sc.nextInt();
-		System.out.println("enter no is = "
-+ n);		
+		System.out.println("enter no is = "+ n);		
 		int sum = 0;
 		for(int i= 1; i< n; i++)
 		{

@@ -16,7 +16,8 @@ public class FileUploadPopup {
 		WebDriver driver = new FirefoxDriver();
 		driver.get("https://smallpdf.com/compress-pdf");
 		WebElement rv = driver.findElement(By.xpath("//span[test()='Choose files']"));
-		JavascriptExecutor	 js = (JavascriptExecutor).driver;
+		JavascriptExecutor	 js = (JavascriptExecutor) driver;
+		//= (JavascriptExecutor).driver;
 		
 		
 	}
