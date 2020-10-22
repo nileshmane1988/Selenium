@@ -10,7 +10,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Child_04 {
 
-	public static void main(String[] args) 
+	public static void main(String[] args)  throws InterruptedException
 	{
 		WebDriverManager.firefoxdriver().setup();
 		WebDriver driver=new FirefoxDriver();
@@ -26,14 +26,6 @@ public class Child_04 {
 			driver.switchTo().window(window_refID);
 			driver.close();
 		}
-		
-		
-		
-		
-		
-		
-		
-
 	}
 
 }
