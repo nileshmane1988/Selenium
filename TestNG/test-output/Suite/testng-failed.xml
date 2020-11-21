@@ -1,13 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.testngexample.Sample6">
+      <class name="com.propertycapsule.BaseClass">
         <methods>
-          <include name="test1"/>
+          <include name="testMethodExecutionResult"/>
+          <include name="testMethodExecutionResult"/>
+          <include name="postConditions"/>
+          <include name="preConditions"/>
         </methods>
-      </class> <!-- com.testngexample.Sample6 -->
+      </class> <!-- com.propertycapsule.BaseClass -->
+      <class name="com.propertycapsule.TestClass_03">
+        <methods>
+          <include name="testMethodExecutionResult"/>
+          <include name="testMethodExecutionResult"/>
+          <include name="postConditions"/>
+          <include name="preConditions"/>
+        </methods>
+      </class> <!-- com.propertycapsule.TestClass_03 -->
+      <class name="com.propertycapsule.TestClass_01">
+        <methods>
+          <include name="testMethodExecutionResult"/>
+          <include name="testMethodExecutionResult"/>
+          <include name="postConditions"/>
+          <include name="preConditions"/>
+        </methods>
+      </class> <!-- com.propertycapsule.TestClass_01 -->
+      <class name="com.propertycapsule.TestClass_02">
+        <methods>
+          <include name="testMethodExecutionResult"/>
+          <include name="testMethodExecutionResult"/>
+          <include name="test2"/>
+          <include name="postConditions"/>
+          <include name="preConditions"/>
+        </methods>
+      </class> <!-- com.propertycapsule.TestClass_02 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

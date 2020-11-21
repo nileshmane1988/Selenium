@@ -38,6 +38,14 @@ public class ActitimeLoginPage
 		{
 			loginbutton.click();
 		}
+		public void clickOnLogin() {
+			// TODO Auto-generated method stub
+			loginbutton.click();
+		}
+		public boolean verifyErrorrMsg() {
+			// TODO Auto-generated method stub
+			return false;
+		}
 
 
 }

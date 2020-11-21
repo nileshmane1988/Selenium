@@ -1,44 +1,73 @@
 package webpages;
 
 
-import org.openqa.selenium.By;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.How;
+import org.openqa.selenium.support.PageFactory;
 
 public class ActitimeLoginPage 
 {
-		//datamember should be declared globally with access specifier private, return type should be WebElement.
-		private WebElement username;
-		private WebElement password;
-		private WebElement checkbox;
-		private WebElement loginbutton;
-		
-		//datamember should be intialized within constructor
-
-		public ActitimeLoginPage(WebDriver driver)
-		{
-			username=driver.findElement(By.id("username"));
-			password=driver.findElement(By.name("pwd"));
-			checkbox=driver.findElement(By.id("keepLoggedInCheckBox"));
-			loginbutton=driver.findElement(By.id("loginButton"));
-		}
-		//datamember should be utilized with method
-		public void setUsername()
-		{
-			username.sendKeys("admin");
-		}
-		public void setPassword()
-		{
-			password.sendKeys("manager");
-		}
-		public void selctCheckBox()
-		{
-			checkbox.click();
-		}
-		public void clickOnLoginButton()
-		{
-			loginbutton.click();
-		}
-
+	@FindBy(id="username")
+	private WebElement username;
+	
+	@FindBy(how=How.NAME,using="pwd")
+	private WebElement password;
+	
+	@FindBy(how=How.ID,using="keepLoggedInCheckBox")
+	private WebElement checkbox;
+	
+	@FindBy(id="loginButton")
+	private WebElement loginbutton;
+	
+	@FindBy(how=How.CLASS_NAME,using="errormsg")
+	private WebElement errormsg;
+	
+	@FindBy(id="licenseLink")
+	private WebElement viewlicense;
+	
+	
+	public ActitimeLoginPage(WebDriver driver)
+	{
+		PageFactory.initElements(driver, this);
+	}
+	
+	public void setCredentials(String user,String pass)
+	{
+		username.sendKeys(user);
+		password.sendKeys(pass);
+	}
+	
+	public void selectCheckbox()
+	{
+		checkbox.click();
+	}
+	
+	public void clickOnLogin()
+	{
+		loginbutton.click();
+	}
+	
+	public boolean verifyErrorrMsg()
+	{
+		return errormsg.isDisplayed();
+	}
+	
+	public void clickOnviewLicence()
+	{
+		viewlicense.click();
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
 }
