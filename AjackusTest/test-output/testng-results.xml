@@ -11,20 +11,34 @@
       <![CDATA[Test Method : test2 Executed successfully]]>
     </line>
   </reporter-output>
-  <suite started-at="2020-11-21T11:27:05 IST" name="Suite" finished-at="2020-11-21T11:28:05 IST" duration-ms="59624">
+  <suite started-at="2020-11-21T11:32:25 IST" name="Suite" finished-at="2020-11-21T11:33:21 IST" duration-ms="56257">
     <groups>
     </groups>
-    <test started-at="2020-11-21T11:27:05 IST" name="Test" finished-at="2020-11-21T11:28:05 IST" duration-ms="59624">
+    <test started-at="2020-11-21T11:32:25 IST" name="Test" finished-at="2020-11-21T11:33:21 IST" duration-ms="56257">
       <class name="com.propertycapsule.TestClass_03">
-        <test-method is-config="true" signature="preConditions()[pri:0, instance:com.propertycapsule.TestClass_03@44a7bfbc]" started-at="2020-11-21T11:27:25 IST" name="preConditions" finished-at="2020-11-21T11:27:43 IST" duration-ms="17481" status="PASS">
+        <test-method is-config="true" signature="preConditions()[pri:0, instance:com.propertycapsule.TestClass_03@152aa092]" started-at="2020-11-21T11:32:47 IST" name="preConditions" finished-at="2020-11-21T11:33:02 IST" duration-ms="14509" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- preConditions -->
-        <test-method signature="test3()[pri:0, instance:com.propertycapsule.TestClass_03@44a7bfbc]" started-at="2020-11-21T11:27:43 IST" name="test3" finished-at="2020-11-21T11:27:47 IST" duration-ms="4138" status="PASS">
+        <test-method signature="test3()[pri:0, instance:com.propertycapsule.TestClass_03@152aa092]" started-at="2020-11-21T11:33:02 IST" name="test3" finished-at="2020-11-21T11:33:05 IST" duration-ms="3394" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test3 -->
-        <test-method is-config="true" signature="postConditions()[pri:0, instance:com.propertycapsule.TestClass_03@44a7bfbc]" started-at="2020-11-21T11:27:47 IST" name="postConditions" finished-at="2020-11-21T11:27:49 IST" duration-ms="1526" status="FAIL">
+        <test-method is-config="true" signature="testMethodExecutionResult(org.testng.ITestResult)[pri:0, instance:com.propertycapsule.TestClass_03@152aa092]" started-at="2020-11-21T11:33:05 IST" name="testMethodExecutionResult" finished-at="2020-11-21T11:33:05 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=test3 status=SUCCESS method=TestClass_03.test3()[pri:0, instance:com.propertycapsule.TestClass_03@152aa092] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Test Method : test3 Executed successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testMethodExecutionResult -->
+        <test-method is-config="true" signature="postConditions()[pri:0, instance:com.propertycapsule.TestClass_03@152aa092]" started-at="2020-11-21T11:33:05 IST" name="postConditions" finished-at="2020-11-21T11:33:07 IST" duration-ms="1562" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchSessionException">
             <message>
               <![CDATA[Session ID is null. Using WebDriver after calling quit()?
@@ -75,35 +89,21 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postConditions -->
-        <test-method is-config="true" signature="testMethodExecutionResult(org.testng.ITestResult)[pri:0, instance:com.propertycapsule.TestClass_03@44a7bfbc]" started-at="2020-11-21T11:27:47 IST" name="testMethodExecutionResult" finished-at="2020-11-21T11:27:47 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=test3 status=SUCCESS method=TestClass_03.test3()[pri:0, instance:com.propertycapsule.TestClass_03@44a7bfbc] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Test Method : test3 Executed successfully]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- testMethodExecutionResult -->
       </class> <!-- com.propertycapsule.TestClass_03 -->
       <class name="com.propertycapsule.TestClass_02">
-        <test-method is-config="true" signature="preConditions()[pri:0, instance:com.propertycapsule.TestClass_02@4ef37659]" started-at="2020-11-21T11:27:49 IST" name="preConditions" finished-at="2020-11-21T11:28:03 IST" duration-ms="14064" status="PASS">
+        <test-method is-config="true" signature="preConditions()[pri:0, instance:com.propertycapsule.TestClass_02@44a7bfbc]" started-at="2020-11-21T11:33:07 IST" name="preConditions" finished-at="2020-11-21T11:33:18 IST" duration-ms="11854" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- preConditions -->
-        <test-method signature="test2()[pri:0, instance:com.propertycapsule.TestClass_02@4ef37659]" started-at="2020-11-21T11:28:03 IST" name="test2" finished-at="2020-11-21T11:28:03 IST" duration-ms="535" status="PASS">
+        <test-method signature="test2()[pri:0, instance:com.propertycapsule.TestClass_02@44a7bfbc]" started-at="2020-11-21T11:33:18 IST" name="test2" finished-at="2020-11-21T11:33:19 IST" duration-ms="536" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test2 -->
-        <test-method is-config="true" signature="testMethodExecutionResult(org.testng.ITestResult)[pri:0, instance:com.propertycapsule.TestClass_02@4ef37659]" started-at="2020-11-21T11:28:03 IST" name="testMethodExecutionResult" finished-at="2020-11-21T11:28:03 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="testMethodExecutionResult(org.testng.ITestResult)[pri:0, instance:com.propertycapsule.TestClass_02@44a7bfbc]" started-at="2020-11-21T11:33:19 IST" name="testMethodExecutionResult" finished-at="2020-11-21T11:33:19 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=test2 status=SUCCESS method=TestClass_02.test2()[pri:0, instance:com.propertycapsule.TestClass_02@4ef37659] output={null}]]]>
+                <![CDATA[[TestResult name=test2 status=SUCCESS method=TestClass_02.test2()[pri:0, instance:com.propertycapsule.TestClass_02@44a7bfbc] output={null}]]]>
               </value>
             </param>
           </params>
@@ -113,7 +113,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </line>
           </reporter-output>
         </test-method> <!-- testMethodExecutionResult -->
-        <test-method is-config="true" signature="postConditions()[pri:0, instance:com.propertycapsule.TestClass_02@4ef37659]" started-at="2020-11-21T11:28:03 IST" name="postConditions" finished-at="2020-11-21T11:28:05 IST" duration-ms="1740" status="FAIL">
+        <test-method is-config="true" signature="postConditions()[pri:0, instance:com.propertycapsule.TestClass_02@44a7bfbc]" started-at="2020-11-21T11:33:19 IST" name="postConditions" finished-at="2020-11-21T11:33:21 IST" duration-ms="2185" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchSessionException">
             <message>
               <![CDATA[Session ID is null. Using WebDriver after calling quit()?
@@ -166,19 +166,19 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
         </test-method> <!-- postConditions -->
       </class> <!-- com.propertycapsule.TestClass_02 -->
       <class name="com.propertycapsule.TestClass_01">
-        <test-method is-config="true" signature="preConditions()[pri:0, instance:com.propertycapsule.TestClass_01@152aa092]" started-at="2020-11-21T11:27:05 IST" name="preConditions" finished-at="2020-11-21T11:27:23 IST" duration-ms="17876" status="PASS">
+        <test-method is-config="true" signature="preConditions()[pri:0, instance:com.propertycapsule.TestClass_01@524d6d96]" started-at="2020-11-21T11:32:25 IST" name="preConditions" finished-at="2020-11-21T11:32:45 IST" duration-ms="20088" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- preConditions -->
-        <test-method signature="test1()[pri:0, instance:com.propertycapsule.TestClass_01@152aa092]" started-at="2020-11-21T11:27:23 IST" name="test1" finished-at="2020-11-21T11:27:24 IST" duration-ms="532" status="PASS">
+        <test-method signature="test1()[pri:0, instance:com.propertycapsule.TestClass_01@524d6d96]" started-at="2020-11-21T11:32:45 IST" name="test1" finished-at="2020-11-21T11:32:45 IST" duration-ms="465" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->
-        <test-method is-config="true" signature="testMethodExecutionResult(org.testng.ITestResult)[pri:0, instance:com.propertycapsule.TestClass_01@152aa092]" started-at="2020-11-21T11:27:24 IST" name="testMethodExecutionResult" finished-at="2020-11-21T11:27:24 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="testMethodExecutionResult(org.testng.ITestResult)[pri:0, instance:com.propertycapsule.TestClass_01@524d6d96]" started-at="2020-11-21T11:32:45 IST" name="testMethodExecutionResult" finished-at="2020-11-21T11:32:45 IST" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=test1 status=SUCCESS method=TestClass_01.test1()[pri:0, instance:com.propertycapsule.TestClass_01@152aa092] output={null}]]]>
+                <![CDATA[[TestResult name=test1 status=SUCCESS method=TestClass_01.test1()[pri:0, instance:com.propertycapsule.TestClass_01@524d6d96] output={null}]]]>
               </value>
             </param>
           </params>
@@ -188,7 +188,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </line>
           </reporter-output>
         </test-method> <!-- testMethodExecutionResult -->
-        <test-method is-config="true" signature="postConditions()[pri:0, instance:com.propertycapsule.TestClass_01@152aa092]" started-at="2020-11-21T11:27:24 IST" name="postConditions" finished-at="2020-11-21T11:27:25 IST" duration-ms="1670" status="FAIL">
+        <test-method is-config="true" signature="postConditions()[pri:0, instance:com.propertycapsule.TestClass_01@524d6d96]" started-at="2020-11-21T11:32:45 IST" name="postConditions" finished-at="2020-11-21T11:32:47 IST" duration-ms="1595" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchSessionException">
             <message>
               <![CDATA[Session ID is null. Using WebDriver after calling quit()?
